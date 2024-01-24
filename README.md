@@ -1,7 +1,7 @@
 # Dice-game
 
 # Introduction
-Welcome to the Pig Game, a simple and entertaining two-player dice game. The goal of the game is to be the first player to reach a total score of 100 points or more. Players take turns rolling a six-sided die and accumulating points. However, beware of rolling a 1, as it will reset your current score for the turn.
+Welcome to the Dice-Game, a simple and entertaining two-player dice game. The goal of the game is to be the first player to reach a total score of 100 points or more. Players take turns rolling a six-sided die and accumulating points. However, beware of rolling a 1, as it will reset your current score for the turn.
 
 # How to Play
 Each player starts with a score of 0.
