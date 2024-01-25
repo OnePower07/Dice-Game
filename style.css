@@ -99,7 +99,6 @@ main {
   font-size: 3.5rem;
 }
 
-/* ABSOLUTE POSITIONED ELEMENTS */
 .btn {
   position: absolute;
   left: 50%;
@@ -124,13 +123,13 @@ main {
 }
 
 .btn::first-letter {
-  font-size: 2.4rem;
+  font-size: 2rem;
   display: inline-block;
-  margin-right: 0.7rem;
+  margin-right: 0rem;
 }
 
 .btn--new {
-  top: 4rem;
+  top: 7rem;
 }
 .btn--roll {
   top: 39.3rem;
@@ -164,6 +163,23 @@ main {
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+.hidden {
+  display: none;
+}
+
+.instructions {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 4rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+  text-align: left;
 }
 
 .hidden {
