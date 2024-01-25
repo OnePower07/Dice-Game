@@ -12,6 +12,8 @@ const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
+const btnHowToPlay = document.querySelector('.btn--how-to-play');
+const btnCloseInstructions = document.querySelector('.btn--close-instructions'); // Added
 
 let scores, currentScore, activePlayer, playing;
 
@@ -57,9 +59,8 @@ btnRoll.addEventListener('click', function () {
     if (dice !== 1) {
       // Add dice to current score
       currentScore += dice;
-      document.getElementById(
-        `current--${activePlayer}`
-      ).textContent = currentScore;
+      document.getElementById(`current--${activePlayer}`).textContent =
+        currentScore;
     } else {
       // Switch to next player
       switchPlayer();
@@ -96,3 +97,13 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', init);
+
+// Toggle visibility of instructions
+btnHowToPlay.addEventListener('click', function () {
+  document.querySelector('.instructions').classList.toggle('hidden');
+});
+
+// Hide instructions when close button is clicked
+btnCloseInstructions.addEventListener('click', function () {
+  document.querySelector('.instructions').classList.add('hidden');
+});
